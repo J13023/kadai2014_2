@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.example.eventcalendar" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="4" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".EventCalendarActivity"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<provider android:name=".EventProvider"
+			android:authorities="com.example.eventcalendar.eventprovider" />
+		<activity android:name=".EventDetailActivity" android:label="@string/app_name">
+		</activity>
+		<activity android:name=".EventEditorActivity" android:label="@string/app_name">
+		</activity>
+		<activity android:name=".BiteEditorActivity"></activity>
+		<activity android:name="com.example.eventcalendar.BankActivity"></activity>
+        <activity android:name="com.example.eventcalendar.BankEdit"></activity>
+	</application>
+</manifest>
